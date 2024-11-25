@@ -1,0 +1,9 @@
+html {
+  color-scheme: light-dark;
+  color: var(--text-1);
+  background: var(--surface-document);
+}
+
+body {
+  margin: 0;
+}

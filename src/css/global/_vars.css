@@ -1,0 +1,5 @@
+@import 'theme.css';
+
+:root {
+  --body-rails: 4rem;
+}
