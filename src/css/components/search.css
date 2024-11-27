@@ -1,0 +1,48 @@
+search {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  & > svg {
+    position: absolute;
+    inset-inline-start: 1em;
+  }
+
+  & > input {
+    appearance: none;
+    caret-color: var(--brand-primary);
+
+    inline-size: 100%;
+    block-size: 2.5rem;
+
+    /* flex: 1; */
+    font-size: 1rem;
+    line-height: 1.1;
+
+    padding-inline: 3rem 1rem;
+
+    border: none;
+    outline: none;
+
+    background: var(--surface-1);
+  }
+
+  & > input:focus ~ svg > path {
+    fill: var(--brand-primary);
+  }
+
+  /* @media (width >= 31.25em) {
+    & > button {
+      display: none;
+    }
+  } */
+
+  /* @media (width <= 500px) {
+    justify-self: flex-end;
+
+    & > :is(svg, input) {
+      display: none;
+    }
+  } */
+}

@@ -1,0 +1,6 @@
+@import 'sun-and-moon.css';
+
+.theme-toggle {
+  --icon-fill: var(--text-2);
+  --icon-fill-hover: var(--text-1);
+}

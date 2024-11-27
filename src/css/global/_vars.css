@@ -2,4 +2,6 @@
 
 :root {
   --body-rails: 4rem;
+  --sidebar-width: 12rem;
+  --search-width: 24rem;
 }

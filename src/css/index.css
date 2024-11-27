@@ -1,4 +1,11 @@
-@layer system, base;
+@layer system, base, components;
 
 @import './global/_vars.css' layer(system);
 @import './global/page.css' layer(base);
+
+@import './components/nav.css' layer(components);
+@import './components/search.css' layer(components);
+@import './components/brand.css' layer(components);
+@import './components/button-list.css' layer(components);
+@import './components/svg.css' layer(components);
+@import './components/theme-toggle.css' layer(components);
