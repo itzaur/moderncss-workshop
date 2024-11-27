@@ -1,0 +1,17 @@
+scroll-progress {
+  place-self: center;
+
+  inline-size: 10ch;
+  block-size: 1ex;
+
+  border-radius: 5rem;
+
+  background-color: var(--surface-2);
+  /* overflow: hidden; */
+
+  &::after {
+    content: '';
+    grid-area: 1 / 1;
+    border-radius: inherit;
+  }
+}

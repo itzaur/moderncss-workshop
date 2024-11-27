@@ -1,0 +1,11 @@
+main {
+  display: grid;
+  gap: 2rem 0;
+
+  padding-block-end: 10vh;
+
+  @media (width >= 48em) {
+    grid-template-columns: var(--sidebar-width) 1fr;
+    margin-inline-start: var(--body-rails);
+  }
+}

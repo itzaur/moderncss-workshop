@@ -1,0 +1,16 @@
+button {
+  display: inline-grid;
+  align-items: center;
+  gap: 0.5rem;
+
+  font-size: 1rem;
+
+  padding: 0.75rem 1rem;
+
+  border: none;
+  border-radius: var(--brand-border_radius);
+
+  background: var(--surface-document);
+
+  cursor: pointer;
+}

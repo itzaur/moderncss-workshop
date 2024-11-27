@@ -1,0 +1,100 @@
+aside {
+  position: sticky;
+  align-self: start;
+
+  inset-block-start: var(--body-rails);
+
+  background: var(--surface-document);
+  z-index: 1;
+
+  @media (width <= 48em) {
+    overflow: auto hidden;
+    scrollbar-width: thin;
+    padding-inline: 1rem;
+    padding-block-end: 1ex;
+    border-image: none;
+  }
+
+  > fieldset {
+    display: grid;
+    place-items: center start;
+    gap: 1rem 2rem;
+
+    margin: 0;
+    padding: 0;
+
+    border: none;
+
+    @media (width <= 48em) {
+      grid-auto-flow: column;
+      grid-auto-columns: max-content;
+    }
+
+    legend {
+      block-size: 0;
+      overflow: hidden;
+    }
+
+    label {
+      position: relative;
+
+      font-size: 0.9rem;
+
+      padding-block: 1ex;
+
+      color: var(--text-2);
+
+      &::before {
+        position: absolute;
+        content: '';
+        display: block;
+
+        inline-size: 4px;
+        block-size: 100%;
+        inset-inline-start: calc((var(--body-rails) + 4px) / 2 * -1);
+        inset-block-start: 0;
+
+        border-radius: 10px;
+
+        transition: background-color 0.3s ease;
+
+        @media (width <= 48em) {
+          inset-inline-start: 0;
+          inset-block-start: calc(100% + 4px);
+          inline-size: 100%;
+          block-size: 4px;
+        }
+      }
+
+      &:hover,
+      &:has(:focus-within) {
+        color: var(--text-1);
+
+        &::before {
+          background-color: var(--brand-secondary);
+        }
+      }
+
+      &:has(:checked) {
+        color: var(--text-1);
+
+        &::before {
+          background-color: var(--brand-primary);
+        }
+      }
+    }
+
+    input[type='radio'] {
+      appearance: none;
+      position: absolute;
+      inset: 0;
+      margin: 0;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+
+      cursor: pointer;
+    }
+  }
+}

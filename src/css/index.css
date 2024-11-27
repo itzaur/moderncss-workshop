@@ -3,9 +3,18 @@
 @import './global/_vars.css' layer(system);
 @import './global/page.css' layer(base);
 
+@import './components/aside.css' layer(components);
+@import './components/main.css' layer(components);
 @import './components/nav.css' layer(components);
 @import './components/search.css' layer(components);
 @import './components/brand.css' layer(components);
 @import './components/button-list.css' layer(components);
 @import './components/svg.css' layer(components);
 @import './components/theme-toggle.css' layer(components);
+@import './components/header.css' layer(components);
+@import './components/link.css' layer(components);
+@import './components/product-card.css' layer(components);
+@import './components/picture.css' layer(components);
+@import './components/button.css' layer(components);
+@import './components/most-popular-scroller.css' layer(components);
+@import './components/scroll-progress.css' layer(components);
