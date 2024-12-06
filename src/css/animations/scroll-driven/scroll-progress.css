@@ -5,7 +5,8 @@
 }
 
 .most-popular,
-.fresh-releases {
+.fresh-releases,
+.super-hot {
   --scroll-timeline-name: --most-popular;
   timeline-scope: var(--scroll-timeline-name);
 

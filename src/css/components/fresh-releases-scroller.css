@@ -1,0 +1,6 @@
+.fresh-releases-scroller {
+  display: grid;
+  grid-auto-columns: 25rem;
+  grid-auto-flow: column;
+  gap: 1rem;
+}

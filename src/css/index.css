@@ -20,7 +20,9 @@
 @import './components/product-card.css' layer(components);
 @import './components/picture.css' layer(components);
 @import './components/button.css' layer(components);
-@import './components/scroller.css' layer(components);
+@import './components/most-popular-scroller.css' layer(components);
+@import './components/fresh-releases-scroller.css' layer(components);
+@import './components/super-hot-scroller.css' layer(components);
 @import './components/scroll-progress.css' layer(components);
 
 @import './animations/scroll-driven/scroll-progress.css' layer(animations);
