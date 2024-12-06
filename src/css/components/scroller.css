@@ -1,4 +1,5 @@
-.most-popular-scroller {
+.most-popular-scroller,
+.fresh-releases-scroller {
   display: grid;
   grid-auto-columns: 20rem;
   grid-auto-flow: column;

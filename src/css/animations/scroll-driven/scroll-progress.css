@@ -4,7 +4,8 @@
   }
 }
 
-.most-popular {
+.most-popular,
+.fresh-releases {
   --scroll-timeline-name: --most-popular;
   timeline-scope: var(--scroll-timeline-name);
 
