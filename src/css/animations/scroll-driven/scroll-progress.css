@@ -1,0 +1,28 @@
+@keyframes scroll-progress {
+  from {
+    translate: -100% 0;
+  }
+}
+
+.most-popular {
+  --scroll-timeline-name: --most-popular;
+  timeline-scope: var(--scroll-timeline-name);
+
+  > [horizontal-scroll] {
+    scroll-timeline: var(--scroll-timeline-name) x;
+  }
+}
+
+scroll-progress {
+  @supports not (animation-timeline: scroll()) {
+    display: none;
+  }
+
+  @supports (animation-timeline: scroll()) {
+    &::after {
+      background: var(--brand-secondary);
+      animation: scroll-progress linear both;
+      animation-timeline: var(--scroll-timeline-name);
+    }
+  }
+}

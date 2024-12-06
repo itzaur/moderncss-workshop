@@ -167,7 +167,7 @@
       </aside>
 
       <article>
-        <section>
+        <section class="most-popular" hide-horizontal-overflow>
           <header>
             <h3>
               Most Popular
@@ -189,7 +189,11 @@
             <scroll-progress></scroll-progress>
           </header>
 
-          <div class="most-popular-scroller">
+          <div
+            class="most-popular-scroller"
+            horizontal-scroll
+            horizontal-snapping
+          >
             <div class="product-card-container">
               <figure class="product-card">
                 <button title="View larger">

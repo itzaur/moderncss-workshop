@@ -1,8 +1,12 @@
-@layer system, base, components;
+@layer system, base, utilities, components, animations;
 
 @import './global/_vars.css' layer(system);
 @import './global/page.css' layer(base);
 
+@import './utilities/scrolling.css' layer(components);
+
+@import './components/body.css' layer(components);
+@import './components/article.css' layer(components);
 @import './components/aside.css' layer(components);
 @import './components/main.css' layer(components);
 @import './components/nav.css' layer(components);
@@ -18,3 +22,5 @@
 @import './components/button.css' layer(components);
 @import './components/most-popular-scroller.css' layer(components);
 @import './components/scroll-progress.css' layer(components);
+
+@import './animations/scroll-driven/scroll-progress.css' layer(animations);

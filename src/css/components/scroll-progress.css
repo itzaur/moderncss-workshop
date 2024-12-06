@@ -1,17 +1,26 @@
 scroll-progress {
   place-self: center;
 
+  display: grid;
   inline-size: 10ch;
   block-size: 1ex;
 
   border-radius: 5rem;
 
   background-color: var(--surface-2);
-  /* overflow: hidden; */
+  overflow: hidden;
 
   &::after {
     content: '';
     grid-area: 1 / 1;
     border-radius: inherit;
+  }
+
+  @media (width >= 768px) {
+    margin-inline-end: var(--body-rails);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    display: none;
   }
 }
