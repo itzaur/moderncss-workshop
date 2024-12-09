@@ -24,5 +24,6 @@
 @import './components/fresh-releases-scroller.css' layer(components);
 @import './components/super-hot-scroller.css' layer(components);
 @import './components/scroll-progress.css' layer(components);
+@import './components/lightbox.css' layer(components);
 
 @import './animations/scroll-driven/scroll-progress.css' layer(animations);

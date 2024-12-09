@@ -1,0 +1,45 @@
+:where(#lightbox) {
+  border: none;
+  padding: 0;
+
+  &,
+  &::backdrop {
+    transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete,
+      scale 0.5s, opacity 0.5s;
+    opacity: 0;
+  }
+
+  &:popover-open {
+    opacity: 1;
+    scale: 1 1;
+
+    &::backdrop {
+      opacity: 1;
+    }
+  }
+
+  @starting-style {
+    &:popover-open {
+      scale: 0 0;
+    }
+
+    &:popover-open,
+    &:popover-open::backdrop {
+      opacity: 0;
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    scale: 0.85 0.85;
+  }
+
+  &::backdrop {
+    background-image: radial-gradient(#0003, 25%, #000e);
+  }
+
+  > img {
+    display: flex;
+    max-inline-size: 100%;
+    block-size: auto;
+  }
+}
