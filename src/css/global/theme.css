@@ -75,9 +75,9 @@
   );
 
   /* use colors with light-dark() for adaptive props */
-  --surface-document: light-dark(white, var(--color-3));
-  --surface-1: light-dark(var(--color-1), var(--color-4));
-  --surface-2: light-dark(var(--color-3), var(--color-13));
+  --surface-1: light-dark(var(--color-1), var(--color-11));
+  --surface-2: light-dark(var(--color-1), var(--color-12));
+  --surface-3: light-dark(var(--color-3), var(--color-13));
   --surface-document: light-dark(white, var(--color-14));
   --text-1: light-dark(var(--color-16), var(--color-1));
   --text-2: light-dark(var(--color-12), var(--color-5));

@@ -25,7 +25,8 @@ search {
     border: none;
     outline: none;
 
-    background: var(--surface-1);
+    color: var(--text-1);
+    background: var(--surface-2);
   }
 
   & > input:focus ~ svg > path {

@@ -13,4 +13,38 @@ button {
   background: var(--surface-document);
 
   cursor: pointer;
+
+  &[light] {
+    background: var(--surface-2);
+    color: var(--text-1);
+  }
+
+  & > svg {
+    inline-size: 100%;
+  }
+
+  &:is([small-icon], [large-icon]) {
+    padding: 0.25rem;
+    border-radius: 50%;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease, outline-offset 0.2s ease;
+
+    &:hover {
+      border-color: var(--surface-2);
+    }
+
+    &:active {
+      border-color: var(--brand-primary);
+    }
+  }
+
+  &[small-icon] {
+    inline-size: 3rem;
+    block-size: 3rem;
+  }
+
+  &[large-icon] {
+    inline-size: 3rem;
+    block-size: 3rem;
+  }
 }

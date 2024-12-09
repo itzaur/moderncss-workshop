@@ -23,7 +23,13 @@
         width="32"
         height="32"
       >
-        <g>
+        <g
+          fill="none"
+          stroke="currentColor"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          stroke-width="1"
+        >
           <path
             style="fill-rule: evenodd; clip-rule: evenodd"
             d="M18.078,16.345c-0.209-0.261-8.709-11.13-9.005-11.496   c-0.279-0.366-0.209-0.47-0.157-0.523c0.105-0.122,0.261-0.105,0.871-0.105c0.366,0,3.989-0.017,4.372-0.017   c0.784,0,0.906,0.07,0.993,0.087c0.087,0.035,0.296,0.209,0.453,0.383c0.087,0.105,7.699,9.214,7.768,9.301   c0.087,0.105,0.209,0.279,0.314,0.435c0.087,0.157,0.105,0.366-0.035,0.453c-0.087,0.052-4.302,1.794-4.424,1.829   c-0.122,0.052-0.348,0.139-0.523,0.105C18.618,16.798,18.357,16.676,18.078,16.345"
@@ -54,7 +60,12 @@
         </svg>
       </search>
       <icon-button-list>
-        <button class="theme-toggle" title="Toggle light & dark">
+        <button
+          small-icon
+          class="theme-toggle"
+          title="Toggle light & dark"
+          aria-label="auto"
+        >
           <svg
             class="sun-and-moon"
             aria-hidden="true"
@@ -86,7 +97,7 @@
             </g>
           </svg>
         </button>
-        <button search title="Search">
+        <button small-icon search title="Search">
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
               class="primary"
@@ -94,7 +105,7 @@
             ></path>
           </svg>
         </button>
-        <button title="Cart">
+        <button small-icon title="Cart">
           <svg
             width="24"
             height="24"
@@ -113,13 +124,11 @@
           </svg>
         </button>
       </icon-button-list>
-      <button title="Account">
+      <button large-icon title="Account">
         <svg
-          class="icon-user-circle"
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
-          width="24"
-          height="24"
+          class="icon-user-circle"
         >
           <circle cx="12" cy="12" r="10" class="secondary" />
           <path
