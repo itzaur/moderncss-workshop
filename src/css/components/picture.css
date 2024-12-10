@@ -3,4 +3,12 @@ picture {
     inline-size: 100%;
     block-size: 100%;
   }
+
+  &[contain] > img {
+    object-fit: contain;
+  }
+
+  &[cover] > img {
+    object-fit: cover;
+  }
 }

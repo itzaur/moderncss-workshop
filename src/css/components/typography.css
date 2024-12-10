@@ -1,0 +1,18 @@
+body {
+  font-family: 'Roboto', system-ui;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: 'Google Sans', system-ui;
+  text-wrap: balance;
+}
+
+p {
+  line-height: 1.5;
+  text-wrap: pretty;
+}
