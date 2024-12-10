@@ -11,6 +11,8 @@ nav {
   block-size: var(--body-rails);
   background: var(--surface-document);
 
+  z-index: 1;
+
   & > :is(:first-child, :last-child) {
     justify-self: center;
   }
