@@ -1,0 +1,19 @@
+section picture {
+  overflow: clip;
+
+  > img {
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: view()) {
+        animation: picture--inview linear both;
+        animation-timeline: view(x);
+        animation-range: 10% 40%;
+      }
+    }
+  }
+}
+
+@keyframes picture--inview {
+  from {
+    scale: 1.25;
+  }
+}

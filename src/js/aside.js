@@ -14,10 +14,20 @@ aside.addEventListener('input', (event) => {
     });
   }
 
-  filter();
+  //   filter();
+
+  document.startViewTransition
+    ? document.startViewTransition(() => filter())
+    : filter();
 });
 
 // get the users motion preference
 const { matches: motionOK } = window.matchMedia(
   '(prefers-reduced-motion: no-preference)'
 );
+
+if (motionOK) {
+  filterTargets.forEach((item, i) => {
+    item.parentNode.style.viewTransitionName = `--product-${i}`;
+  });
+}

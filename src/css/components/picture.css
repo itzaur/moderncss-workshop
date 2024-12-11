@@ -1,3 +1,5 @@
+@import '../animations/scroll-driven/picture.css';
+
 picture {
   &:is([contain], [cover]) > img {
     inline-size: 100%;

@@ -1,3 +1,5 @@
+@import '../animations//view-transition/nav.css';
+
 nav {
   position: sticky;
   top: 0;

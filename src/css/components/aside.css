@@ -1,3 +1,5 @@
+@import '../animations/view-transition/aside.css';
+
 aside {
   position: sticky;
   align-self: start;
@@ -28,6 +30,7 @@ aside {
     @media (width <= 48em) {
       grid-auto-flow: column;
       grid-auto-columns: max-content;
+      gap: 1rem;
     }
 
     legend {
