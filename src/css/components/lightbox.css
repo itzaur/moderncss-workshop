@@ -5,13 +5,13 @@
   &,
   &::backdrop {
     transition: display 0.5s allow-discrete, overlay 0.5s allow-discrete,
-      scale 0.5s, opacity 0.5s;
+      transform 0.5s, opacity 0.5s;
     opacity: 0;
   }
 
   &:popover-open {
     opacity: 1;
-    scale: 1 1;
+    transform: scale(1);
 
     &::backdrop {
       opacity: 1;
@@ -30,7 +30,7 @@
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    scale: 0.85 0.85;
+    transform: scale(0.95);
   }
 
   &::backdrop {

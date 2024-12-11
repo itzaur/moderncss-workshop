@@ -14,6 +14,15 @@ button {
 
   cursor: pointer;
 
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  &[primary] {
+    background: var(--brand-primary);
+    color: black;
+  }
+
   &[light] {
     background: var(--surface-2);
     color: var(--text-1);
@@ -23,27 +32,27 @@ button {
     inline-size: 100%;
   }
 
-  &:is([small-icon], [large-icon]) {
+  &:is([data-name='small-icon'], [data-name='large-icon']) {
     padding: 0.25rem;
     border-radius: 50%;
     border: 1px solid transparent;
     transition: border-color 0.2s ease, outline-offset 0.2s ease;
 
     &:hover {
-      border-color: var(--surface-2);
+      border-color: light-dark(var(--surface-3), var(--surface-1));
     }
 
     &:active {
-      border-color: var(--brand-primary);
+      border-color: light-dark(var(--brand-primary), var(--brand-secondary));
     }
   }
 
-  &[small-icon] {
+  &[data-name='small-icon'] {
     inline-size: 3rem;
     block-size: 3rem;
   }
 
-  &[large-icon] {
+  &[data-name='large-icon'] {
     inline-size: 3rem;
     block-size: 3rem;
   }

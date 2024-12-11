@@ -14,8 +14,6 @@ aside.addEventListener('input', (event) => {
     });
   }
 
-  //   filter();
-
   document.startViewTransition
     ? document.startViewTransition(() => filter())
     : filter();

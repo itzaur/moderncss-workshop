@@ -1,4 +1,4 @@
-const pictures = document.querySelectorAll('[light-box]');
+const pictures = document.querySelectorAll("[data-name='light-box']");
 
 const state = {
   open: false,

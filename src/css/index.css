@@ -1,7 +1,9 @@
-@layer system, base, utilities, components, animations;
+@layer system, base, utilities, components;
 
-@import './global/_vars.css' layer(system);
+@import './global/_vars.css' layer(system.props);
 @import './global/page.css' layer(base);
+@import './global/focus.css' layer(base);
+@import './global/typography.css' layer(base);
 
 @import './utilities/scrolling.css' layer(components);
 
@@ -14,6 +16,7 @@
 @import './components/brand.css' layer(components);
 @import './components/button-list.css' layer(components);
 @import './components/svg.css' layer(components);
+@import './components/money.css' layer(components);
 @import './components/theme-toggle.css' layer(components);
 @import './components/header.css' layer(components);
 @import './components/link.css' layer(components);
@@ -25,7 +28,4 @@
 @import './components/super-hot-scroller.css' layer(components);
 @import './components/scroll-progress.css' layer(components);
 @import './components/lightbox.css' layer(components);
-@import './components/typography.css' layer(components);
 @import './components/greeting.css' layer(components);
-
-@import './animations/scroll-driven/scroll-progress.css' layer(animations);

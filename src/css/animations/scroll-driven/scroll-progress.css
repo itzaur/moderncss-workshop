@@ -4,14 +4,25 @@
   }
 }
 
+.most-popular {
+  --_scroll-timeline-name: --most-popular;
+}
+
+.fresh-releases {
+  --_scroll-timeline-name: --fresh-releases;
+}
+
+.super-hot {
+  --_scroll-timeline-name: --super-hot;
+}
+
 .most-popular,
 .fresh-releases,
 .super-hot {
-  --scroll-timeline-name: --most-popular;
-  timeline-scope: var(--scroll-timeline-name);
+  timeline-scope: var(--_scroll-timeline-name);
 
-  > [horizontal-scroll] {
-    scroll-timeline: var(--scroll-timeline-name) x;
+  > [data-scroll='horizontal-scroll'] {
+    scroll-timeline: var(--_scroll-timeline-name) x;
   }
 }
 
@@ -24,7 +35,7 @@ scroll-progress {
     &::after {
       background: var(--brand-secondary);
       animation: scroll-progress linear both;
-      animation-timeline: var(--scroll-timeline-name);
+      animation-timeline: var(--_scroll-timeline-name);
     }
   }
 }

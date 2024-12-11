@@ -1,3 +1,10 @@
+@keyframes greeting--leaveview {
+  to {
+    opacity: 0;
+    translate: 0 2rem;
+  }
+}
+
 .greeting {
   @media (prefers-reduced-motion: no-preference) {
     @supports (animation-timeline: scroll()) {
@@ -5,12 +12,5 @@
       animation-timeline: scroll(root);
       animation-range: 0 10vh;
     }
-  }
-}
-
-@keyframes greeting--leaveview {
-  to {
-    opacity: 0;
-    translate: 0 20px;
   }
 }

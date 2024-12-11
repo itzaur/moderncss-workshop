@@ -57,6 +57,10 @@
     text-wrap: balance;
 
     color: var(--text-1);
+
+    @media (min-resolution: 1.25dppx) {
+      font-weight: 400;
+    }
   }
 
   & img {
@@ -80,7 +84,7 @@
     align-items: flex-start;
   }
 
-  & span {
+  & span:not([data-name='money']) {
     font-size: 0.8rem;
     color: var(--brand-primary);
     margin-block-end: 0.25rem;
@@ -126,7 +130,7 @@
     }
 
     a,
-    [money] {
+    [data-name='money'] {
       color: var(--color-1);
     }
 
@@ -135,7 +139,7 @@
       color: var(--color-4);
     }
 
-    [money] > sup {
+    [data-name='money'] > sup {
       color: var(--color-4);
     }
   }

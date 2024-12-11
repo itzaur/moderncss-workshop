@@ -61,7 +61,7 @@
       </search>
       <icon-button-list>
         <button
-          small-icon
+          data-name="small-icon"
           class="theme-toggle"
           title="Toggle light & dark"
           aria-label="auto"
@@ -97,7 +97,7 @@
             </g>
           </svg>
         </button>
-        <button small-icon search title="Search">
+        <button data-name="small-icon" data-search="search" title="Search">
           <svg width="24" height="24" xmlns="http://www.w3.org/2000/svg">
             <path
               class="primary"
@@ -105,7 +105,7 @@
             ></path>
           </svg>
         </button>
-        <button small-icon title="Cart">
+        <button data-name="small-icon" title="Cart">
           <svg
             width="24"
             height="24"
@@ -124,7 +124,7 @@
           </svg>
         </button>
       </icon-button-list>
-      <button large-icon title="Account">
+      <button data-name="large-icon" title="Account">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -179,7 +179,7 @@
       </aside>
 
       <article>
-        <section class="most-popular" hide-horizontal-overflow>
+        <section class="most-popular" data-name="hide-horizontal-overflow">
           <header>
             <h3>
               Most Popular
@@ -203,15 +203,15 @@
 
           <div
             class="most-popular-scroller"
-            horizontal-scroll
-            horizontal-snapping
+            data-scroll="horizontal-scroll"
+            data-snapping="horizontal-snapping"
           >
             <div class="product-card-container">
               <figure
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/1.jpg"
@@ -229,7 +229,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -239,7 +239,7 @@
                 class="product-card"
                 data-categories="hoodies jackets sweaters"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/2.jpg"
@@ -257,7 +257,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -267,7 +267,7 @@
                 class="product-card"
                 data-categories="hoodies jackets sweaters"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/3.jpg"
@@ -284,14 +284,14 @@
                     <small>Cotton Hoodie</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets sweaters">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/4.jpg"
@@ -309,14 +309,14 @@
                   </div>
                   <div class="product-cost">
                     <p>Special weave</p>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/5.jpg"
@@ -333,7 +333,7 @@
                     <small>Leatherman Jacket</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -343,7 +343,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/6.jpg"
@@ -361,7 +361,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -371,7 +371,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/7.jpg"
@@ -389,7 +389,7 @@
                   </div>
                   <div class="product-cost">
                     <p>Women's only exclusive</p>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -397,7 +397,7 @@
           </div>
         </section>
 
-        <section class="fresh-releases" hide-horizontal-overflow>
+        <section class="fresh-releases" data-name="hide-horizontal-overflow">
           <header>
             <h3>
               Fresh Releases
@@ -421,15 +421,15 @@
 
           <div
             class="fresh-releases-scroller"
-            horizontal-scroll
-            horizontal-snapping
+            data-scroll="horizontal-scroll"
+            data-snapping="horizontal-snapping"
           >
             <div class="product-card-container">
               <figure
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/9.jpg"
@@ -447,14 +447,14 @@
                   </div>
                   <div class="product-cost">
                     <p>Available in Black</p>
-                    <data money>$129<sup>99</sup></data>
+                    <span data-name="money">$129<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/12.jpg"
@@ -472,14 +472,14 @@
                   </div>
                   <div class="product-cost">
                     <p>Available in Navy</p>
-                    <data money>$39<sup>99</sup></data>
+                    <span data-name="money">$39<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets rainwear">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/13.jpg"
@@ -497,7 +497,7 @@
                   </div>
                   <div class="product-cost">
                     <p>Available in Navy</p>
-                    <data money>$39<sup>99</sup></data>
+                    <span data-name="money">$39<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -507,7 +507,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/10.jpg"
@@ -524,14 +524,14 @@
                     <small>Cyan Puffer</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets rainwear">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/11.jpg"
@@ -548,14 +548,14 @@
                     <small>Camel Parka</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$39<sup>99</sup></data>
+                    <span data-name="money">$39<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/14.jpg"
@@ -572,7 +572,7 @@
                     <small>Denim Jacket</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -582,7 +582,7 @@
                 class="product-card"
                 data-categories="hoodies jackets sweaters"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/2.jpg"
@@ -599,7 +599,7 @@
                     <small>Cotton Hoodie</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -609,7 +609,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/1.jpg"
@@ -627,7 +627,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -637,7 +637,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/17.jpg"
@@ -655,14 +655,14 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$99<sup>99</sup></data>
+                    <span data-name="money">$99<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets rainwear">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/18.jpg"
@@ -680,14 +680,14 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets rainwear">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/16.jpg"
@@ -705,14 +705,14 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/15.jpg"
@@ -730,7 +730,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -738,7 +738,7 @@
           </div>
         </section>
 
-        <section class="super-hot" hide-horizontal-overflow>
+        <section class="super-hot" data-name="hide-horizontal-overflow">
           <header>
             <h3>
               Super Hot
@@ -760,10 +760,14 @@
             <scroll-progress></scroll-progress>
           </header>
 
-          <div class="super-hot-scroller" horizontal-scroll horizontal-snapping>
+          <div
+            class="super-hot-scroller"
+            data-scroll="horizontal-scroll"
+            data-snapping="horizontal-snapping"
+          >
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets sweaters">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/4.jpg"
@@ -781,14 +785,14 @@
                   </div>
                   <div class="product-cost">
                     <p>Special weave</p>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
             </div>
             <div class="product-card-container">
               <figure class="product-card" data-categories="jackets">
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/5.jpg"
@@ -805,7 +809,7 @@
                     <small>Leatherman Jacket</small>
                   </div>
                   <div class="product-cost">
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -815,7 +819,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/6.jpg"
@@ -833,7 +837,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -843,7 +847,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/7.jpg"
@@ -861,7 +865,7 @@
                   </div>
                   <div class="product-cost">
                     <p>Women's only exclusive</p>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -871,7 +875,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/8.jpg"
@@ -889,7 +893,7 @@
                   </div>
                   <div class="product-cost">
                     <p>Available in Black</p>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -899,7 +903,7 @@
                 class="product-card"
                 data-categories="puffer jackets rainwear"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/1.jpg"
@@ -917,7 +921,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -927,7 +931,7 @@
                 class="product-card"
                 data-categories="hoodies jackets sweaters"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/2.jpg"
@@ -945,7 +949,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -955,7 +959,7 @@
                 class="product-card"
                 data-categories="hoodies jackets sweaters"
               >
-                <button light-box title="View larger">
+                <button data-name="light-box" title="View larger">
                   <picture>
                     <img
                       src="products/3.jpg"
@@ -973,7 +977,7 @@
                   </div>
                   <div class="product-cost">
                     <span>Limited Edition</span>
-                    <data money>$29<sup>99</sup></data>
+                    <span data-name="money">$29<sup>99</sup></span>
                   </div>
                 </figcaption>
               </figure>
@@ -983,7 +987,7 @@
       </article>
     </main>
 
-    <figure id="lightbox" popover>Test</figure>
+    <div id="lightbox" popover>Test</div>
 
     <script type="module" src="./src/js/index.js"></script>
   </body>

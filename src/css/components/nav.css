@@ -3,6 +3,7 @@
 nav {
   position: sticky;
   top: 0;
+
   display: grid;
   grid-auto-flow: column;
   align-items: center;
@@ -21,7 +22,7 @@ nav {
 
   @media (width >= 31.25em) {
     /* 500px */
-    & > icon-button-list > button[search] {
+    & > icon-button-list > button[data-search='search'] {
       display: none;
     }
   }

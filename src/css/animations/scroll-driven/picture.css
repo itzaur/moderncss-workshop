@@ -1,3 +1,9 @@
+@keyframes picture--inview {
+  from {
+    scale: 1.25;
+  }
+}
+
 section picture {
   overflow: clip;
 
@@ -9,11 +15,5 @@ section picture {
         animation-range: 10% 40%;
       }
     }
-  }
-}
-
-@keyframes picture--inview {
-  from {
-    scale: 1.25;
   }
 }
