@@ -1,0 +1,25 @@
+[data-scroll='horizontal-scroll'] {
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+
+  padding-block-end: 1rem;
+  padding-inline-end: var(--body-rails);
+
+  body:has(:popover-open) & {
+    overflow: hidden;
+  }
+
+  @media (width <= 48em) {
+    scroll-padding-inline: var(--body-rails);
+    padding: 0 1rem 1rem;
+  }
+}
+
+[data-snapping='horizontal-snapping'] > * {
+  scroll-snap-align: start;
+}
+
+[data-name='hide-horizontal-overflow'] {
+  overflow-x: hidden;
+}

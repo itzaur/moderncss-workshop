@@ -1,0 +1,16 @@
+@import '../animations/scroll-driven/picture.css';
+
+picture {
+  &:is([contain], [cover]) > img {
+    inline-size: 100%;
+    block-size: 100%;
+  }
+
+  &[contain] > img {
+    object-fit: contain;
+  }
+
+  &[cover] > img {
+    object-fit: cover;
+  }
+}

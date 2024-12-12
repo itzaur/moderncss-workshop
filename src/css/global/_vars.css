@@ -2,4 +2,7 @@
 
 :root {
   --body-rails: 4rem;
+  --sidebar-width: 12rem;
+  --search-width: 24rem;
+  --brand-border_radius: 0.25rem;
 }

@@ -1,0 +1,7 @@
+::view-transition-group(--nav) {
+  z-index: 2;
+}
+
+nav {
+  view-transition-name: --nav;
+}

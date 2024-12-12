@@ -1,0 +1,10 @@
+::view-transition-group(--aside) {
+  z-index: 1;
+}
+
+aside {
+  view-transition-name: --aside;
+
+  border-image: conic-gradient(var(--surface-document) 0 0) fill 0 / 0 / 20px 0
+    100vh 10vw;
+}

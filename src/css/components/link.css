@@ -1,0 +1,36 @@
+a {
+  display: inline-grid;
+  display: -moz-inline-grid;
+  grid-auto-flow: column;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: var(--text-2);
+  transition: color 0.3s ease;
+
+  &:hover {
+    color: var(--text-1);
+
+    & > svg > .primary {
+      fill: var(--text-2);
+    }
+
+    & > svg > .secondary {
+      stroke: var(--text-2);
+      fill: var(--surface-document);
+    }
+  }
+
+  &:not(:hover) {
+    text-decoration: none;
+  }
+
+  &:focus:not(:focus-visible) {
+    outline: none;
+  }
+
+  & > svg {
+    inline-size: 1rem;
+    block-size: 1rem;
+  }
+}

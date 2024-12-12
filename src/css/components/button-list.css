@@ -1,0 +1,8 @@
+icon-button-list {
+  display: flex;
+  justify-content: flex-end;
+
+  & > button {
+    margin-inline-start: 0.5rem;
+  }
+}

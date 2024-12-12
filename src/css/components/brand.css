@@ -1,0 +1,13 @@
+my-brand {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.25em;
+
+  color: var(--text-1);
+
+  @media (width <= 21.875em) {
+    /* 350px */
+    inline-size: 0;
+    overflow: hidden;
+  }
+}

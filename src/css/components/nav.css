@@ -1,0 +1,37 @@
+@import '../animations//view-transition/nav.css';
+
+nav {
+  position: sticky;
+  top: 0;
+
+  display: grid;
+  grid-auto-flow: column;
+  align-items: center;
+  grid-template-columns:
+    var(--body-rails) minmax(min-content, var(--sidebar-width))
+    minmax(min-content, var(--search-width)) 1fr var(--body-rails);
+
+  block-size: var(--body-rails);
+  background: var(--surface-document);
+
+  z-index: 1;
+
+  & > :is(:first-child, :last-child) {
+    justify-self: center;
+  }
+
+  @media (width >= 31.25em) {
+    /* 500px */
+    & > icon-button-list > button[data-search='search'] {
+      display: none;
+    }
+  }
+
+  @media (width <= 31.25em) {
+    /* 500px */
+    & > search {
+      inline-size: 0;
+      overflow: hidden;
+    }
+  }
+}
